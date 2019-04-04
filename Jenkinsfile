@@ -1,6 +1,10 @@
 pipeline{
-agent any
-stage{
-echo 'hello this is declarative pipeline'
-}
+        agent any
+  stages{
+    stage('one'){
+      steps{ 
+        echo 'hello this is declarative pipeline'
+           }
+                }
+  }
 }
